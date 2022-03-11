@@ -2,9 +2,9 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('ping')
-		.setDescription('Replies with Pong!'),
+		.setName('delete_task')
+		.setDescription('Delete a task.'),
 	async execute(interaction) {
-		await interaction.reply('Pong!');
+		await interaction.reply('*Deleting task #*');
 	},
 };

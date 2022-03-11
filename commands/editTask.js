@@ -2,9 +2,9 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('create_task_list')
-		.setDescription('Create a new task list'),
+		.setName('edit_task')
+		.setDescription('edit a task.'),
 	async execute(interaction) {
-		await interaction.reply('*creating a new task list*');
+		await interaction.reply('*Editing task #*');
 	},
 };
